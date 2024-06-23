@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Mastiti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro Mastiti</h1>
+        <form id="mastitisForm">
+            <label for="cowNumber">Numero Bovina:</label>
+            <input type="text" id="cowNumber" name="cowNumber" required>
+
+            <label for="eventDate">Data dell'Evento:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <label for="affectedQuarter">Quarto Affetto:</label>
+            <select id="affectedQuarter" name="affectedQuarter" required>
+                <option value="anteriore sinistro">Anteriore Sinistro</option>
+                <option value="anteriore destro">Anteriore Destro</option>
+                <option value="posteriore sinistro">Posteriore Sinistro</option>
+                <option value="posteriore destro">Posteriore Destro</option>
+            </select>
+
+            <button type="submit">Registra</button>
+        </form>
+        <div id="records">
+            <h2>Eventi Registrati</h2>
+            <ul id="recordsList"></ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
